@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4Q-o5-PB4">
-                                <rect key="frame" x="112.5" y="198" width="151" height="291.5"/>
+                                <rect key="frame" x="113" y="199" width="150" height="290"/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="250"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="249"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <connections>

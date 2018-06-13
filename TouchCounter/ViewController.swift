@@ -26,6 +26,15 @@ class ViewController: UIViewController {
         let tapColor = UITapGestureRecognizer(target: self, action: #selector(changeColorsUI))
         view.addGestureRecognizer(tapColor)
         
+        guard let customFont = UIFont(name: "Menlo-Regular", size: 250.0) else {
+            fatalError("""
+        Failed to load the "Menlo-Regular" font.
+        Make sure the font file is included in the project and the font name is spelled correctly.
+        """
+            )
+        }
+        countLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
+        countLabel.adjustsFontForContentSizeCategory = true
     }
 
     private func updateUI() {
