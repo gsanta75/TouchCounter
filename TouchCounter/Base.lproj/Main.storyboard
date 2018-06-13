@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4Q-o5-PB4">
-                                <rect key="frame" x="118" y="150.5" width="138" height="386"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4Q-o5-PB4">
+                                <rect key="frame" x="112.5" y="198" width="151" height="291.5"/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="250"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="250"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <connections>
@@ -47,7 +47,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="260" y="112"/>
+            <point key="canvasLocation" x="-10" y="6"/>
         </scene>
     </scenes>
 </document>

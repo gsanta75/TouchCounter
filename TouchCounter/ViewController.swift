@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var countLabel: UILabel! { didSet { countLabel.text = "\(count)" } }
+    @IBOutlet weak var countLabel: UILabel! { didSet { countLabel.text = String(format: "%02d", count) } }
     
     @IBAction func tapCounter(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
@@ -29,17 +29,16 @@ class ViewController: UIViewController {
     }
 
     private func updateUI() {
-        countLabel.text = "\(count)"
+        countLabel.text = String(format: "%02d", count)
     }
     
     private func setRndColorForUIView(_ view:UIView) {
-        if view is UILabel {
-            let label = view as! UILabel
-            label.textColor = UIColor.rndColor
-        } else {
+        guard let labelForColor = view as? UILabel else {
             view.backgroundColor = UIColor.rndColor
+            return
         }
-
+        
+        labelForColor.textColor = UIColor.rndColor
     }
     
     @objc private func changeColorsUI() {
@@ -49,7 +48,7 @@ class ViewController: UIViewController {
 }
 
 extension UIColor {
-    public class var rndColor: UIColor {
+    fileprivate class var rndColor: UIColor {
         /*
          let hue = CGFloat(arc4random() % 256) / 256.0 // 0.0 to 1.0
          let saturation = CGFloat(arc4random() % 128) / 256.0 // 0.5 to 1.0, away from white
