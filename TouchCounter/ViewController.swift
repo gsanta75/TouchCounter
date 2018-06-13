@@ -58,12 +58,6 @@ class ViewController: UIViewController {
 
 extension UIColor {
     fileprivate class var rndColor: UIColor {
-        /*
-         let hue = CGFloat(arc4random() % 256) / 256.0 // 0.0 to 1.0
-         let saturation = CGFloat(arc4random() % 128) / 256.0 // 0.5 to 1.0, away from white
-         let brightness = CGFloat(arc4random() % 128) / 256.0 // 0.5 to 1.0, away from black
-         return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
-         */
         let _red = Float(arc4random() % 256) / 256.0
         let _green = Float(arc4random() % 256) / 256.0
         let _blue = Float(arc4random() % 256) / 256.0
